@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    vertical-align: middle;
+    font-family: Overpass;
+    background: var(--main-VeryDarkBlue);
+}
+
+:root {
+    --main-Orange: hsl(25, 97%, 53%);
+    --main-White: hsl(0, 0%, 100%);
+    --main-LightGrey: hsl(217, 12%, 63%);
+    --main-MediumGrey: hsl(216, 12%, 54%);
+    --main-DarkBlue: hsl(213, 19%, 18%);
+    --main-VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+
+div.container {
+    background: 
+    radial-gradient(ellipse at top,
+    hsl(213, 19%, 25%) -60%,
+    hsl(213, 19%, 18%) 60%,
+    hsl(213, 19%, 13%) 100%);
+    margin: 30px auto;
+    padding: 25px;
+    width: 85%;
+    transform: translate(0,50%);
+    border-radius: 15px;
+}
+
+.star {
+    background: hsla(217, 12%, 63%, 0.2);
+    border-radius: 50%;
+    display: inline-block;
+    padding:6px;
+}
+
+p.description {
+    color: var(--main-LightGrey);
+    font-size: 11px;
+}
+
+.rating {
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    padding-top: 5px;
+    color: var(--main-LightGrey);
+    font-size: 13px;
+}
+
+ul>li {
+    background: hsla(217, 12%, 63%, 0.2);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+    transition: 0.5s;
+}
+
+ul>li:hover {
+    background: var(--main-Orange);
+    color: var(--main-White);
+    cursor: pointer;
+}
+
+ul>li:active {
+    background: var(--main-LightGrey);
+}
+
+.submit{
+    background: var(--main-Orange);
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    font-size: 0.6em;
+    padding: 5px;
+    color: var(--main-White);
+    text-transform: uppercase;
+}
+
+.submit:hover {
+    background: var(--main-White);
+    color: var(--main-Orange);
+    cursor: pointer;
+}
+
+.submit:active {
+    background: var(--main-LightGrey);
+    color: var(--main-Orange);
+}
+
+.img-card {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.btn-back {
+    background: var(--main-Orange);
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    font-size: 0.6em;
+    padding: 5px;
+    color: var(--main-White);
+    text-transform: uppercase;
+}
+
+div.selection {
+    background: hsla(217, 12%, 63%, 0.2);
+    color: var(--main-Orange);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+p.thankyou {
+    color: var(--main-White);
+    text-align: center;
+}
+
+p.description-2 {
+    color: var(--main-LightGrey);
+    font-size: 11px;
+    text-align: center;
+}
+
+div.attribution {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--main-LightGrey);
+    font-size: 0.6em;
+    text-align: center;
+}
+
+div.attribution > a {
+    color: var(--main-Orange);
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (min-width: 500px) {
+    div.container {
+        width: 55%; 
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    div.container {
+        width: 24%; 
+    }
+
+    p.description {
+        font-size: 13px; 
+    }
+}
